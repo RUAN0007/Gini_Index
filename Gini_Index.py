@@ -39,6 +39,7 @@ def strip_file_extension(file_name):
 
 salary_all_list = list()
 result_file = open("result.txt",'w')
+
 for file in os.listdir('./data'):
     if fnmatch.fnmatch(file, '*.txt'):
         file_name = strip_file_extension(file)
