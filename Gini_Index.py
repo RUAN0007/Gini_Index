@@ -1,7 +1,10 @@
+import os
+import fnmatch
+
 def calculate_Gini_Index_from_list(salary):
     dots = convert_salary_list_into_dots(salary)
     integrate_result = integrate_dots_from_0_to_1(dots)
-    return 2 - 2 * integrate_result
+    return 1 - 2 * integrate_result
 
 def sum_list(ls):
     sum = 0
@@ -28,12 +31,28 @@ def integrate_dots_from_0_to_1(dots):
         sum += data * 2
     sum += 1
     return sum / count / 2
+
+def extract_file_name_without_extension(file_name):
+    file_name_list = file_name.split('.')
+    return file_name_list[0]
     
 
-salary_list = list();
-with open("data.txt") as file:
-    for line in file:
-        salary_list.append(int(line))
+salary_all_list = list()
+result_file = open("result.txt",'w')
+for file in os.listdir('./data'):
+    if fnmatch.fnmatch(file, '*.txt'):
+        file_name = extract_file_name_without_extension(file)
+        salary_list = list()
+        with open("data/"+file) as fl:
+            for line in fl:
+                salary_list.append(int(line))
+        salary_all_list.extend(salary_list)               
+        result = calculate_Gini_Index_from_list(salary_list)
+        if(not result_file.write("{}: {}\n".format(file_name,round(result,3)))):
+            print("File Overwriting Failed")
+
+        final_result = calculate_Gini_Index_from_list(salary_all_list)     
+result_file.write("\nAll: {}\n".format(round(final_result,3)))
+result_file.close()
         
-print (calculate_Gini_Index_from_list(salary_list))
         
