@@ -32,7 +32,7 @@ def integrate_dots_from_0_to_1(dots):
     sum += 1
     return sum / count / 2
 
-def extract_file_name_without_extension(file_name):
+def strip_file_extension(file_name):
     file_name_list = file_name.split('.')
     return file_name_list[0]
     
@@ -41,7 +41,7 @@ salary_all_list = list()
 result_file = open("result.txt",'w')
 for file in os.listdir('./data'):
     if fnmatch.fnmatch(file, '*.txt'):
-        file_name = extract_file_name_without_extension(file)
+        file_name = strip_file_extension(file)
         salary_list = list()
         with open("data/"+file) as fl:
             for line in fl:
