@@ -1,0 +1,32 @@
+76ers: 0.468
+Blazers: 0.455
+Bobcats: 0.429
+Bucks: 0.371
+Bulls: 0.507
+Cavaliers: 0.381
+Celtics: 0.521
+Clippers: 0.533
+Grizzles: 0.514
+Hawks: 0.485
+Heat: 0.508
+Hornets 2: 0.536
+Jazz: 0.479
+Kings: 0.417
+Knicks: 0.544
+Lakers: 0.604
+Magic: 0.487
+Mavericks: 0.526
+Nets: 0.597
+Nuggets: 0.481
+Pacers: 0.525
+Pistols: 0.443
+Raptors: 0.442
+Rockets: 0.426
+Spurs: 0.536
+Suns: 0.604
+Thunder: 0.54
+Warriors: 0.538
+Wizards: 0.522
+Woodwolves: 0.394
+
+All: 0.53
