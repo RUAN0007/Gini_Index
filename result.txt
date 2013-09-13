@@ -30,3 +30,34 @@ Wizards: 0.522
 Woodwolves: 0.394
 
 All: 0.52
+
+Heat: 0.508
+Thunder: 0.54
+Spurs: 0.536
+Nuggets: 0F.481
+Clippers: 0.533
+Grizzles: 0.514
+Knicks: 0.544
+Pacers: 0.525
+Nets: 0.597
+Warriors: 0.538
+Bulls: 0.507
+Rockets: 0.426
+Lakers: 0.604
+Hawks: 0.485
+Jazz: 0.479
+Celtics: 0.521
+Mavericks: 0.526
+76ers: 0.468
+Raptors: 0.442
+Blazers: 0.455
+Woodwolves: 0.394
+Pistols: 0.443
+Wizards: 0.522
+Kings: 0.417
+Hornets: 0.536
+Sun: 0.388
+Cavaliers: 0.381
+Bobcats: 0.429
+Magic: 0.487
+
